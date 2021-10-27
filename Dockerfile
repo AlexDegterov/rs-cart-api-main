@@ -10,7 +10,7 @@ RUN npm run build && npm cache clean --force && rm -rf app/src
 
 FROM base AS release
 COPY --from=base /app/package*.json ./
-RUN npm install --only=production
+RUN npm install --production
 COPY --from=base /app/dist ./dist
 
 USER node
