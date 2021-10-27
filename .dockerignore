@@ -1,0 +1,8 @@
+# Elastic Beanstalk Files
+.elasticbeanstalk
+
+dist/
+node_modules/
+
+# tests
+test
